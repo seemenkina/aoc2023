@@ -1,4 +1,4 @@
-use aoc2023::{day1::*, day2::*, day3::*};
+use aoc2023::{day1::*, day2::*, day3::*, day4::*};
 
 fn main() {
     // run_day1_1();
@@ -9,4 +9,7 @@ fn main() {
 
     // run_day3_1();
     // run_day3_2();
+
+    run_day4_1();
+    run_day4_2();
 }
