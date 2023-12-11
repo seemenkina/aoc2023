@@ -17,7 +17,7 @@ fn parce_line(line: &str) -> u32 {
     let num: usize = res
         .iter()
         .zip(&res[1..])
-        .map(|(prev, next)| next.intersection(&prev).count())
+        .map(|(prev, next)| next.intersection(prev).count())
         .sum();
     if num == 0 {
         0
@@ -40,7 +40,7 @@ fn parce_line_second(line: &str) -> usize {
 
     res.iter()
         .zip(&res[1..])
-        .map(|(prev, next)| next.intersection(&prev).count())
+        .map(|(prev, next)| next.intersection(prev).count())
         .sum()
 }
 
